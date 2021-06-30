@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyCook</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="https://kit.fontawesome.com/855ef9a3fe.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  
+</head>
+<body>
+  <!-- <header class="header">
+    
+    <h1 class="logo"><i class="fas fa-utensils" style="color: #F54748"></i> EasyCook</h1>
+    <div class="btn_acciones" >
+      <input class="form-control" type="text" id="busqueda" placeholder="Buscar receta..." /> 
+      <a href="" class="btn btn-warning"><i class="fas fa-search"></i> buscar</a>
+      <a href="" class="btn btn-danger">Ingresar</a>
+      <a href="" class="btn btn-danger"> Registrarse</a>
+    </div>
+
+
+  </header> -->
+
+  <div class="col-12">
+    <header class="row">
+    <div class="col-4">
+      <h1 class=""><i class="fas fa-utensils" style="color: #F54748"></i><a href="index.html" style="text-decoration:none; color: black">EasyCook</a></h1>
+    </div>
+    <div class="col-8 row justify-content-end">
+      <input  class="form-control col-6" type="text" id="busqueda" placeholder="Buscar receta..." /> 
+      <button href="" class="btn btn-warning btn-principal"><i class="fas fa-search"></i></button>
+      <p class="pt-2">Omar Rojas</p>
+    </div>
+  </header>
+
+  <div class="col-12 row justify-content-around">
+    <a href="" class="" style="color: black">Incio</a>
+    <a href="mi_perfil.html" style="color: black" class="">Mi Perfil</a>
+    <a href="" class="" style="color: black">Ayuda</a>
+    <a href="" class="" style="color: black">Contactos</a>    
+    <a href="" style="color: black">Preimum</a>
+  </div>
+
+  <div>
+<a class="col-5" href="sopas.html"><-&nbsp;Regresar</a>
+    <div class="row col-12">
+      <div class="col-6 ">
+        <span class="badge badge-warning pt-2" style="height: 25px; font-size: 16px">Datos del usuario:</span>&nbsp;&nbsp;Omar Rojas
+      </div>
+
+      <div class="col-6 row justify-content-end">
+        <a href="index.html" class="btn btn-danger">Cerrar Sesión</a>
+      </div>
+    </div>
+
+
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="historial">
+          <h2 class="mb-0">
+            <button  style="color: black" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+              Historial
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse " aria-labelledby="historial" data-parent="#accordionExample">
+          <div class="card-body">
+            sin datos.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="datos">
+          <h2 class="mb-0">
+            <button  style="color: black" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+               Datos Personales
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="datos" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="col-12 row justify-content-around">
+              <button class="btn btn-success">Cambiar Nombre</button>
+              <button class="btn btn-success"  data-toggle="modal" data-target="#modal_cambiar_contra">Cambiar Contraseña</button>
+              <button class="btn btn-success"  data-toggle="modal" data-target="#modal_clases">Clases</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="recetas">
+          <h2 class="mb-0">
+            <button  style="color: black" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Mis Recetas
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="recetas" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row justify-content-around">
+            <a href="" class="btn btn-success">Recetas Publicadas</a>
+           <a href="nueva_receta.html" class="btn btn-success">Nuevas Recetas</a>
+         </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="suscripcion">
+          <h2 class="mb-0">
+            <button  style="color: black" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Suscripción
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="suscripcion" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row  col-12 justify-content-around">
+              <div class="col-4 row ">
+              <button class="btn btn-primary">Mensual</button>&nbsp;&nbsp;&nbsp;
+              <span>s/ 3.00</span>
+            </div>
+
+            <div class="col-4 row ">
+              <button class="btn btn-primary">Trimestral</button>&nbsp;&nbsp;&nbsp;
+              <span>s/ 8.00</span>
+            </div>
+
+            <div class="col-4 row ">
+              <button class="btn btn-primary">Anual</button>&nbsp;&nbsp;&nbsp;
+              <span>s/ 30.00</span>
+            </div>
+            </div>
+
+            <div class="col-12 row justify-content-center ">
+              <div class="col-12"><p >El primer mes sale a nuestra cuenta</p></div>
+              <button class="btn btn-danger">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    
+  </div>
+
+
+
+
+  <div class="modal fade" id="modal_cambiar_contra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cambiar contraseña</h5>
+          
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">
+               Escriba su contraseña nueva
+            </label>
+
+            <input type="password" class="form-control" id="new_password">
+            
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+               Repita su contraseña nueva
+            </label>
+
+            <input type="password" class="form-control" id="new_password_confirm">
+            
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-success" onclick="cambiar_contra()">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal_clases" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Clases</h5>
+          
+        </div>
+        <div class="modal-body">
+          
+          <div class="row justify-content-around">
+            <a href="ver_grabaciones.html" class="btn btn-primary">Ver Grabaciones</a>
+            <a href="" class="btn btn-primary">Ver Clases</a>
+         </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  </div> 
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+  
